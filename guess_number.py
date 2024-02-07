@@ -8,6 +8,9 @@ while guess != 'q':
     if guess == number:
         print("Congratulations! You guessed the right number.")
         break
+    elif guess > number:
+        print(f'Sorry! {guess} was too high.')
     else:
-        print(f'Sorry! {guess} was not the number I was thinking of')
-        guess = input('Try again or type "q" to quit: ')
+        print(f'Sorry! {guess} was too low.')
+    
+    guess = input('Try again or type "q" to quit: ')
